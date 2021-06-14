@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.example.android.data.viewmodel.SendViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backdrop_framelayout_radius">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment_prepare_choice_folder_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/fragment_prepare_go_share_Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/fragment_prepare_folder_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fragment_prepare_TextView_marginStart"
+                android:layout_marginTop="@dimen/fragment_prepare_TextView_marginTop"
+                android:text="@string/fragment_prepare_folder_TextView_text"
+                android:textSize="@dimen/fragment_prepare_TextView_textSize"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/fragment_prepare_go_folder_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fragment_prepare_TextView_marginStart"
+                android:contentDescription="@string/imageView_description"
+                android:onClick="@{() -> viewModel.switchPage(`folder`)}"
+                android:src="@drawable/ic_add_black_24dp"
+                android:background="@drawable/ripple_unbounded"
+                android:visibility="@{viewModel.selectedPathLiveData.length() > 0 ? View.GONE : View.VISIBLE}"
+                app:layout_constraintBottom_toBottomOf="@id/fragment_prepare_folder_TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/fragment_prepare_folder_TextView" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fragment_prepare_choiced_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/fragment_prepare_marginHorizontal"
+                android:layout_marginTop="@dimen/fragment_prepare_element_marginTop"
+                android:visibility="@{viewModel.selectedPathLiveData.length() > 0 ? View.VISIBLE : View.GONE}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment_prepare_folder_TextView">
+
+                <TextView
+                    android:id="@+id/recycler_prepare_title_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="경로"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/recycler_prepare_route_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewModel.selectedPathLiveData}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/recycler_prepare_title_TextView" />
+
+                <ImageView
+                    android:id="@+id/recycler_prepare_delete_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.deleteSelectedFolderPath()}"
+                    android:src="@drawable/ic_close_black_24dp"
+                    android:background="@drawable/ripple_unbounded"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <Button
+            android:id="@+id/fragment_prepare_go_share_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/fragment_prepare_go_share_Button_margin"
+            android:layout_marginBottom="@dimen/fragment_prepare_go_share_Button_margin"
+            android:enabled="@{viewModel.selectedPathLiveData.length() > 0}"
+            android:onClick="@{() -> viewModel.openShareNameDialog()}"
+            android:paddingVertical="@dimen/fragment_prepare_go_share_Button_paddingVertical"
+            android:text="@string/fragment_prepare_go_share_Button_text"
+            android:textSize="@dimen/fragment_prepare_go_share_Button_textSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

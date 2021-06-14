@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--login-->
+    <dimen name="activity_login_logo_height">150dp</dimen>
+    <dimen name="activity_login_layout_height">400dp</dimen>
+    <dimen name="activity_login_logo_marginHorizontal">80dp</dimen>
+    <dimen name="activity_login_textInputLayout_marginHorizontal">24dp</dimen>
+    <dimen name="activity_login_textInputLayout_height">60dp</dimen>
+    <dimen name="activity_login_button_marginHorizontal">24dp</dimen>
+    <dimen name="activity_login_button_marginTop">24dp</dimen>
+    <dimen name="activity_login_button_paddingVertical">16dp</dimen>
+    <dimen name="activity_login_button_textSize">20sp</dimen>
+    <dimen name="activity_login_google_button_marginTop">24dp</dimen>
+    <dimen name="activity_login_submenu_marginTop">24dp</dimen>
+    <dimen name="activity_login_submenu_width">100dp</dimen>
+    <dimen name="activity_login_submenu_textSize">16sp</dimen>
+
+    <!--sign up-->
+    <dimen name="activity_signup_logo_height">150dp</dimen>
+    <dimen name="activity_signup_layout_height">500dp</dimen>
+    <dimen name="activity_signup_logo_marginHorizontal">80dp</dimen>
+    <dimen name="activity_signup_textInputLayout_marginHorizontal">24dp</dimen>
+    <dimen name="activity_signup_textInputLayout_height">80dp</dimen>
+    <dimen name="activity_signup_textInputEditText_height">54dp</dimen>
+    <dimen name="activity_signup_email_check_button_marginStart">6dp</dimen>
+    <dimen name="activity_signup_email_check_button_marginVertical">8dp</dimen>
+    <dimen name="activity_signup_email_check_button_textSize">16sp</dimen>
+    <dimen name="activity_signup_button_marginHorizontal">24dp</dimen>
+    <dimen name="activity_signup_button_marginTop">24dp</dimen>
+    <dimen name="activity_signup_button_paddingVertical">16dp</dimen>
+    <dimen name="activity_signup_button_textSize">20sp</dimen>
+    <dimen name="activity_signup_google_button_marginTop">24dp</dimen>
+    <dimen name="activity_signup_submenu_marginTop">24dp</dimen>
+    <dimen name="activity_signup_submenu_width">100dp</dimen>
+    <dimen name="activity_signup_submenu_textSize">16sp</dimen>
+
+    <!--check email-->
+    <dimen name="fragment_user_check_width">300dp</dimen>
+    <dimen name="fragment_user_check_height">300dp</dimen>
+    <dimen name="fragment_user_check_textInputLayout_height">60dp</dimen>
+    <dimen name="fragment_user_check_textInputLayout_marginHorizontal">24dp</dimen>
+    <dimen name="fragment_user_check_button_width">120dp</dimen>
+    <dimen name="fragment_user_check_button_margin">24dp</dimen>
+    <dimen name="fragment_user_check_text_size">16sp</dimen>
+
+    <!--main-->
+    <dimen name="activity_main_logo_height">150dp</dimen>
+    <dimen name="activity_main_logo_marginHorizontal">80dp</dimen>
+    <dimen name="activity_main_layout_height">300dp</dimen>
+    <dimen name="activity_main_button_width">300dp</dimen>
+    <dimen name="activity_main_button_textsize">25sp</dimen>
+    <dimen name="activity_main_button_height">100dp</dimen>
+
+    <!--backdrop-->
+    <dimen name="activity_backdrop_action_bar_height">56dp</dimen>
+    <dimen name="activity_backdrop_menu_icon_marginStart">16dp</dimen>
+    <dimen name="activity_backdrop_menu_icon_marginTop">16dp</dimen>
+    <dimen name="activity_backdrop_menu_text_marginStart">32dp</dimen>
+    <dimen name="activity_backdrop_menu_text_textSize">20sp</dimen>
+    <dimen name="activity_backdrop_action_bar_detail_margin">16dp</dimen>
+    <dimen name="activity_backdrop_action_bar_detail_button_paddingVertical">10dp</dimen>
+
+    <!--prepare-->
+    <dimen name="fragment_prepare_TextView_textSize">18sp</dimen>
+    <dimen name="fragment_prepare_TextView_marginTop">24dp</dimen>
+    <dimen name="fragment_prepare_TextView_marginStart">16dp</dimen>
+    <dimen name="fragment_prepare_element_marginTop">8dp</dimen>
+    <dimen name="fragment_prepare_go_share_Button_margin">12dp</dimen>
+    <dimen name="fragment_prepare_go_share_Button_paddingVertical">16dp</dimen>
+    <dimen name="fragment_prepare_go_share_Button_textSize">18sp</dimen>
+    <dimen name="fragment_prepare_marginHorizontal">16dp</dimen>
+
+    <!--folder-->
+    <dimen name="fragment_folder_header_layout_height">56dp</dimen>
+    <dimen name="fragment_folder_header_title_textView_marginStart">16dp</dimen>
+    <dimen name="fragment_folder_header_title_textView_textSize">18sp</dimen>
+    <dimen name="fragment_folder_footer_layout_height">56dp</dimen>
+    <dimen name="fragment_folder_footer_button_marginHorizontal">16dp</dimen>
+    <dimen name="recycler_folder_imageView_margin">16dp</dimen>
+
+    <!--create folder-->
+    <dimen name="fragment_create_folder_layout_height">230dp</dimen>
+    <dimen name="fragment_create_folder_info_textSize">18sp</dimen>
+    <dimen name="fragment_create_folder_button_width">120dp</dimen>
+
+    <!--share name-->
+    <dimen name="fragment_share_name_dialog_layout_width">300dp</dimen>
+    <dimen name="fragment_share_name_dialog_layout_height">250dp</dimen>
+    <dimen name="fragment_share_name_layout_height">230dp</dimen>
+    <dimen name="fragment_share_name_info_textSize">17sp</dimen>
+    <dimen name="fragment_share_name_button_width">120dp</dimen>
+
+    <!--share-->
+    <dimen name="fragment_share_layout_width">300dp</dimen>
+    <dimen name="fragment_share_connection_textView_height">82dp</dimen>
+    <dimen name="fragment_share_connection_textView_textSize">18sp</dimen>
+    <dimen name="fragment_share_marginHorizontal">16dp</dimen>
+    <dimen name="fragment_share_marginVertical">16dp</dimen>
+
+    <!--setting-->
+    <dimen name="fragment_setting_marginHorizontal">16dp</dimen>
+    <dimen name="fragment_setting_info_marginTop">24dp</dimen>
+    <dimen name="fragment_setting_info_paddingVertical">24dp</dimen>
+    <dimen name="fragment_setting_info_paddingHorizontal">16dp</dimen>
+    <dimen name="fragment_setting_info_textView_marginStart">12dp</dimen>
+    <dimen name="fragment_setting_name_textView_textSize">18sp</dimen>
+    <dimen name="fragment_setting_imageView_height">100dp</dimen>
+    <dimen name="fragment_setting_button_height">56dp</dimen>
+    <dimen name="fragment_setting_button_textSize">14sp</dimen>
+    <dimen name="fragment_setting_dialog_layout_width">300dp</dimen>
+    <dimen name="fragment_setting_dialog_marginHorizontal">24dp</dimen>
+
+
+
+    <dimen name="fragment_edit_password_layout_height">340dp</dimen>
+    <dimen name="fragment_edit_password_text_input_layout_height">85dp</dimen>
+    <dimen name="fragment_edit_password_text_input_edit_text_height">56dp</dimen>
+
+</resources>

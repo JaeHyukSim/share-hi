@@ -1,0 +1,27 @@
+{
+  "name": "FileServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./appV2.js",
+    "test": "node_modules/.bin/mocha ./mocha-test-client/mocha.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "hashmap": "^2.4.0",
+    "socket.io": "^4.0.0",
+    "socket.io-client": "^4.0.0",
+    "socket.io-stream": "^0.9.1",
+    "stack": "^0.1.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
+}
